@@ -3,7 +3,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import Accueil from "../home/Accueil";
+import Accueil from "../accueil/accueil";
 import Error404 from '../Error404/Error404'
 
 
