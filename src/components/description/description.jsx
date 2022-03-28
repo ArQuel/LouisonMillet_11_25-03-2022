@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom"
 import datas from '../datas'
 import styles from '../description/description.module.css'
 import Stars from './stars rating/stars'
+import Carousel from './carousel/carousel'
 
 function Description(){
     const idlogement = useParams()
@@ -11,6 +12,7 @@ function Description(){
 
     return (
         <div>
+            <Carousel value={logement.pictures}/>
             <h1 className={styles.title}>{logement.title}</h1>
             <Stars stars={logement.rating}/>
         </div>

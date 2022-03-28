@@ -10,6 +10,9 @@
     flex-wrap: wrap;
     margin-top: 120px;
     margin-left: 50px;
+    margin-right: 50px;
+    background-color: #F6F6F6;
+    border-radius: 25px;
 }
 
 .gridElt {
@@ -27,7 +30,8 @@
 .title {
     color: white;
     position: absolute;
-    font-size: 13px;
+    font-size: 12px;
     bottom: 10%;
     left: 10%
 }
+

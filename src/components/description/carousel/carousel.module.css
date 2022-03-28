@@ -1,0 +1,4 @@
+.thumbswrapper {
+    display: flex;
+    justify-content: space-around;
+}
