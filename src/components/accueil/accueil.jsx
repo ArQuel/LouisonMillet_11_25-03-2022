@@ -14,7 +14,7 @@ function Accueil() {
         {Object.keys(datas).map((logement) => (
 
           <div key={datas[logement].id} className={styles.gridElt}>
-          <Link to={`/description/${datas[logement].id}`} params={{logement}}>
+          <Link to={`/description/${datas[logement].id}`}>
             <img src={datas[logement].cover} className={styles.pics}></img>
             <h2 className={styles.title}>{datas[logement].title}</h2>
             </Link>

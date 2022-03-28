@@ -13,7 +13,7 @@ function Chemin() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Accueil />}/>
-            <Route path="/description/*" element={<Description />}/>
+            <Route path="/description/:idlogement" element={<Description />}/>
             <Route path="*" element={<Error404 />} />
           </Routes>
         </BrowserRouter>
