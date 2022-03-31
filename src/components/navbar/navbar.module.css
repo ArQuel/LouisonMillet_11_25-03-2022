@@ -13,12 +13,11 @@
 
 .menu {
     display: flex;
-    margin-right: 5%
+    margin-right: 6%
 }
 
 a {
-    margin: 20px;
-    margin-right: 50px;
+    padding: 20px;
     color: #FF6060;
     cursor: pointer;
     font-weight: 500

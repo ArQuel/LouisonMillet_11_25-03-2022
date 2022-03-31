@@ -1,0 +1,18 @@
+.author {
+    height: 90px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.name {
+    font-size: 18px;
+    color: #FF6060;
+    font-weight: 500;
+    width: 4%;
+    margin-right: 1%;
+}
+
+.profilPic {
+    border-radius: 100%;
+    margin-right: 6%;
+}

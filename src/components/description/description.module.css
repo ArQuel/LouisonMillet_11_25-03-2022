@@ -1,3 +1,35 @@
+.descElt {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 6%
+}
+
 .title {
     color: #FF6060;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.location {
+    margin-top: 0px;
+    color: #FF6060;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.tags {
+    display: flex;
+    margin-left: 6%;
+}
+
+.tag {
+    margin-right: 1%;
+    text-align: center;
+    color: white;
+    background-color: #FF6060;
+    border-radius: 10px;
+    width: 115px;
+    height: 25px;
 }

@@ -1,15 +1,18 @@
-import styles from '../stars rating/stars.module.css'
+import fullstar from './fullstar.png'
+import emptystar from './emptystar.png'
+import styles from './stars.module.css'
 
 function stars(props) {
-    console.log(props.stars)
-    switch (props.stars) {
-        case '1' : return <div>1</div>
-        case '2' : return <div>2</div>
-        case '3' : return <div>3</div>
-        case '4' : return <div className={styles.starRatingsCss} title=".875"></div>
-        case '5' : return <div>5</div>
-    }
 
+    let tableau = ["1","2","3","4","5"]
+
+    return (
+        <div className={styles.stars}>
+            {tableau.map((index) => (
+                index <= props.stars ? <img key={`starFull-${index}`} src={fullstar}></img> : <img key={`starEmpty-${index}`} src={emptystar}></img>
+            ))}
+        </div>
+    )
 }
 
 export default stars
