@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import leftArrow from './leftArrow.svg';
 import rightArrow from './rightArrow.svg'
+import styles from './carousel.module.css'
 
 function Carousel({sliders}) {
   const [current, setCurrent] = useState(0);
@@ -19,9 +20,8 @@ function Carousel({sliders}) {
   }
 
   return (
-    <section className='sliders'>
-      <img src={leftArrow} className='left-arrow' onClick={prevSlide} />
-      <img src={rightArrow} className='right-arrow' onClick={nextSlide} />
+    <section className={styles.slider}>
+      <img src={leftArrow} className={styles.leftArrow} onClick={prevSlide} />
       {sliders.map((slide, index) => {
         return (
           <div
@@ -29,13 +29,14 @@ function Carousel({sliders}) {
             key={index}
           >
             {index === current && (
-              <img src={slide.image} alt='travel image' className='image' />
+              <img src={slide} alt='diapo des logements'/>
             )}
           </div>
         );
       })}
+      <img src={rightArrow} className={styles.rightArrow} onClick={nextSlide} />
     </section>
   );
 }
 
-export default Carousel;
+export default Carousel

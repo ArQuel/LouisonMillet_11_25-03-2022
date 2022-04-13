@@ -1,4 +1,21 @@
-.thumbswrapper {
+.slider {
     display: flex;
     justify-content: space-around;
+}
+
+.leftArrow {
+    cursor: pointer;
+    height: 80px;
+    align-self: center;
+}
+
+.rightArrow {
+    cursor: pointer;
+    height: 80px;
+    align-self: center;
+}
+
+img {
+    border-radius: 25px;
+    object-fit: cover;
 }

@@ -1,3 +1,13 @@
+.ctn {
+    display: flex;
+    justify-content: space-between;
+    width: 93%;
+}
+
+.host {
+    align-self: flex-end;
+}
+
 .descElt {
     display: flex;
     justify-content: flex-start;
@@ -32,4 +42,17 @@
     border-radius: 10px;
     width: 115px;
     height: 25px;
+}
+
+
+p {
+    color:#FF6060
+}
+
+.dropdown {
+    width: 87%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
 }

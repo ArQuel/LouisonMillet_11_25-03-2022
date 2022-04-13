@@ -1,8 +1,7 @@
 .author {
     height: 90px;
     display: flex;
-    justify-content: flex-end;
-}
+justify-content: space-between;}
 
 .name {
     font-size: 18px;
