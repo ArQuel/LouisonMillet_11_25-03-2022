@@ -4,6 +4,7 @@
     justify-content: space-around;
 }
 
+
 .cardsCTN {
     display: flex;
     justify-content: space-around;
@@ -13,7 +14,6 @@
     background-color: #F6F6F6;
     border-radius: 25px;
     margin-top: 120px;
-    margin-bottom: 100px;
 }
 
 .gridElt {
@@ -31,8 +31,36 @@
 .title {
     color: white;
     position: absolute;
-    font-size: 12px;
+    font-size: 13px;
     bottom: 10%;
-    left: 10%
+    left: 10%;
 }
 
+.filtered {
+    position: absolute;
+    left: 5%;
+    width: 340px;
+    height: 340px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .banniere {
+      width: 375px;
+      margin-left: 3%;
+      height: 111px;
+      display: flex;
+      margin-top: 15px;
+      border-radius: 10px;
+    }
+
+    .cardsCTN {
+        margin-top: 50px;
+    }
+
+    .filtered {
+        left: 0;
+        top: 5%
+    }
+  }

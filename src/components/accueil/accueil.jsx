@@ -15,6 +15,7 @@ function Accueil() {
 
           <div key={datas[logement].id} className={styles.gridElt}>
           <Link to={`/description/${datas[logement].id}`}>
+            <div className={styles.filtered}></div>
             <img src={datas[logement].cover} className={styles.pics}></img>
             <h2 className={styles.title}>{datas[logement].title}</h2>
             </Link>

@@ -4,18 +4,53 @@
 }
 
 .leftArrow {
+    position: absolute;
     cursor: pointer;
     height: 80px;
     align-self: center;
+    filter: invert(99%) sepia(0%) saturate(7494%) hue-rotate(336deg) brightness(111%) contrast(97%);
+    left: 0;
+    top: 40%;
+    width: 150px;
 }
 
 .rightArrow {
+    width: 150px;
+    position: absolute;
     cursor: pointer;
     height: 80px;
     align-self: center;
+    filter: invert(99%) sepia(0%) saturate(7494%) hue-rotate(336deg) brightness(111%) contrast(97%);
+    right: 0;
+    top: 40%
 }
 
-img {
+.current {
     border-radius: 25px;
     object-fit: cover;
+    width: 1240px;
+    height: 415px;
+}
+
+.inside {
+    position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+    .current {
+        width: 335px;
+        height: 255px;
+    }   
+
+    .leftArrow {
+        left: 0;
+        top: 40%;
+        width: 50px;
+        height: 50px;
+    }
+
+    .rightArrow {
+        width: 50px;
+        height: 50px;
+    }
 }

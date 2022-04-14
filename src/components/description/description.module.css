@@ -58,3 +58,32 @@ p {
     margin-left: 5%;
     margin-bottom: 100px;
 }
+
+@media screen and (max-width: 1000px) {
+    .ctn {
+        margin-top: 10px;
+    }
+
+    .descElt {
+        width: 200px;
+    }
+    
+    .title {
+        font-size: 18px;
+        margin-left: 10%;
+    }
+
+    .location {
+        font-size: 14px;
+        margin-left: 10%
+    }
+    .dropdown {
+        flex-direction: column;
+    }
+    .tag {
+        width: 90px;
+        margin-top: 5%;
+        margin-left: 2%;
+        font-size: 14px
+    }
+  }

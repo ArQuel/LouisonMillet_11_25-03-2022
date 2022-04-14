@@ -29,3 +29,16 @@ a:hover {
     text-decoration: underline;
 }
 
+
+@media screen and (max-width: 1000px) {
+    .logo {
+        height: 75px;
+        width: 150px;
+    }
+
+    a {
+      padding: 5px;
+    }
+  }
+
+

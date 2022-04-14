@@ -22,12 +22,14 @@ function Carousel({sliders}) {
   return (
     <section className={styles.slider}>
       {length === 1 ? <div>
-              <img src={sliders[current]} alt='diapo des logements'/>
-          </div> : <><img src={leftArrow} className={styles.leftArrow} onClick={prevSlide} />
-          <div>
-              <img src={sliders[current]} alt='diapo des logements'/>
+              <img src={sliders[current]} className={styles.current} alt='diapo des logements'/>
+          </div> : <>
+          <div className={styles.inside}>
+              <img src={leftArrow} className={styles.leftArrow} onClick={prevSlide} />
+              <img src={sliders[current]} className={styles.current} alt='diapo des logements'/>
+              <img src={rightArrow} className={styles.rightArrow} onClick={nextSlide} />
           </div>
-      <img src={rightArrow} className={styles.rightArrow} onClick={nextSlide} /></>}
+      </>}
       
     </section>
   );

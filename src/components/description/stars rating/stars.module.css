@@ -5,3 +5,11 @@
   margin: 1%;
   margin-right: 6.5%;
 }
+
+@media screen and (max-width: 1000px) {
+  .stars {
+    height: 22px;
+    margin-top: 3%;
+    margin-right: 20%;
+  }
+}

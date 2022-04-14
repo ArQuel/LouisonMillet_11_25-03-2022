@@ -5,7 +5,7 @@ import background from './background.png'
 function About () {
     return (
         <div>
-            <div className={styles.banniere}>
+            <div className={styles.banniereCtn}>
                 <img src={background} className={styles.banniere}></img>
             </div>
             <div className={styles.aboutCtn}>

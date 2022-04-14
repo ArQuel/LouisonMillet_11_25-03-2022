@@ -77,3 +77,19 @@ li {
 ul {
     padding-left: 0px
 }
+
+@media screen and (max-width: 1000px) {
+    .title {
+        max-width: 350px;
+        margin-top: 5%
+    }
+    .description {
+        max-width: 350px;
+    }
+    .aboutTitle {
+        max-width: 350px;
+    }
+    .aboutDescription {
+        max-width: 350px;
+    }
+}
