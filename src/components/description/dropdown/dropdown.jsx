@@ -12,22 +12,25 @@ export default function Dropdown(props) {
             return !oldOpen
         })
     }
+
+    const stylesAboutTitle = props.taille === 'about' ?  styles.aboutTitle : styles.title
+    const stylesAboutDescription = props.taille === 'about' ? styles.aboutDescription : styles.description
     const stylesArrow = open ? styles.openArrow : styles.closeArrow
+
     return (
-        <div className={styles.dropdownCtn}>
-            <div onClick={handleClick} className={styles.title}>
+        <div>
+            <div onClick={handleClick} className={stylesAboutTitle}>
             {title}
                 <div>
                     <img src={arrow} className={stylesArrow}></img>
                 </div>
             </div>
-
-            <div className={styles.description}>
+            {open ? <div className={stylesAboutDescription}>
                 <p>
-                    {open ? children : null}
+                    {children}
                 </p>
-            </div>
+            </div> : null}
+
         </div>
     )
-
 }

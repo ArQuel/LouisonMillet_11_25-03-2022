@@ -18,7 +18,7 @@ function footer() {
                 </img>
             </div>
             <div className={styles.description}>   
-                <p>© 2020 Kasa. All rights reserved</p>
+                <p className={styles.rights}>© 2020 Kasa. All rights reserved</p>
             </div>
         </div>
     )

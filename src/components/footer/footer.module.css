@@ -2,7 +2,7 @@
     background-color: black;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-top: 50px;
+    margin-top: auto;
 }
 
 .description {
@@ -10,7 +10,8 @@
     justify-content: space-around;
 }
 
-p{
+
+.rights {
     color: white;
 }
 

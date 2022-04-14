@@ -30,7 +30,7 @@ function Description(){
                 </div>
             <div className={styles.dropdown}>
                 <Dropdown title='Description'>
-                        <p className={styles.descriptiondd}>{logement.description}</p>
+                        <p>{logement.description}</p>
                 </Dropdown>
                 <Dropdown title='Equipements'>
                         <ul>

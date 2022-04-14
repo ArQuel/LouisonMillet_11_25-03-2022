@@ -21,20 +21,14 @@ function Carousel({sliders}) {
 
   return (
     <section className={styles.slider}>
-      <img src={leftArrow} className={styles.leftArrow} onClick={prevSlide} />
-      {sliders.map((slide, index) => {
-        return (
-          <div
-            className={index === current ? 'slide active' : 'slide'}
-            key={index}
-          >
-            {index === current && (
-              <img src={slide} alt='diapo des logements'/>
-            )}
+      {length === 1 ? <div>
+              <img src={sliders[current]} alt='diapo des logements'/>
+          </div> : <><img src={leftArrow} className={styles.leftArrow} onClick={prevSlide} />
+          <div>
+              <img src={sliders[current]} alt='diapo des logements'/>
           </div>
-        );
-      })}
-      <img src={rightArrow} className={styles.rightArrow} onClick={nextSlide} />
+      <img src={rightArrow} className={styles.rightArrow} onClick={nextSlide} /></>}
+      
     </section>
   );
 }

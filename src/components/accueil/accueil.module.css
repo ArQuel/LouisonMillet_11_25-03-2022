@@ -4,19 +4,20 @@
     justify-content: space-around;
 }
 
-.grid {
+.cardsCTN {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 120px;
     margin-left: 5%;
     margin-right: 6%;
     background-color: #F6F6F6;
     border-radius: 25px;
+    margin-top: 120px;
+    margin-bottom: 100px;
 }
 
 .gridElt {
-    margin: 80px;
+    margin: 20px;
     position: relative
 }
 

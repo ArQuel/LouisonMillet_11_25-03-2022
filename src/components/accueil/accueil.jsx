@@ -10,7 +10,7 @@ function Accueil() {
       <div className={styles.banniere}>
         <img src={background} className={styles.banniere}></img>
       </div>
-      <div className={styles.grid}>
+      <div className={styles.cardsCTN}>
         {Object.keys(datas).map((logement) => (
 
           <div key={datas[logement].id} className={styles.gridElt}>

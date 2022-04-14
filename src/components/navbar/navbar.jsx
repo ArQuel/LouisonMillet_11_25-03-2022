@@ -9,8 +9,12 @@ function Navbar() {
                 <img src={Logo} className={styles.logo} alt="Logo Kasa"></img>
             </Link>
                 <div className={styles.menu}>
-                    <a>Accueil</a>
-                    <a className={styles.apropos}>À Propos</a>
+                    <Link to='/'>
+                        <a>Accueil</a>
+                    </Link>
+                    <Link to='/about'>
+                        <a className={styles.apropos}>À Propos</a>
+                    </Link>
                 </div>
 
         </div>
