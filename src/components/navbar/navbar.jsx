@@ -10,10 +10,10 @@ function Navbar() {
             </Link>
                 <div className={styles.menu}>
                     <Link to='/'>
-                        <a>Accueil</a>
+                        <span>Accueil</span>
                     </Link>
                     <Link to='/about'>
-                        <a className={styles.apropos}>À Propos</a>
+                        <span className={styles.apropos}>À Propos</span>
                     </Link>
                 </div>
 

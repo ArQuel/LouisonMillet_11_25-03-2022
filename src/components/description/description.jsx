@@ -1,4 +1,5 @@
-import { useParams } from "react-router-dom"
+import { Navigate, useParams } from "react-router-dom"
+//import { useEffect, useState } from "react"
 import datas from '../datas'
 import styles from '../description/description.module.css'
 import Stars from './stars rating/stars'
@@ -8,7 +9,22 @@ import Dropdown from './dropdown/dropdown'
 
 function Description(){
     const idlogement = useParams()
+   // const navigate = useNavigate()
+    //const [logement, setLogement] = useState(undefined)
     const logement = datas.find(elt => elt.id === idlogement.idlogement)
+    if(logement === undefined){
+        return <Navigate replace to="/404" />
+    }
+    /*
+    useEffect(() => {
+        const lodge = datas.find(elt => elt.id === idlogement.idlogement)
+        console.log("testttt")
+        if (lodge === undefined) {
+            return navigate('/404')
+        } else {
+            setLogement({...lodge})
+        }
+    }, []) */
 
     return (
         <div>

@@ -19,6 +19,8 @@
 
 .ErrorRedirection {
     margin-top: 200px;
+    text-align: center;
+    height: 15px;
     color: #FF6060;
     text-decoration: underline;
 }

@@ -26,9 +26,9 @@ export default function Dropdown(props) {
                 </div>
             </div>
             {open ? <div className={stylesAboutDescription}>
-                <p>
+            
                     {children}
-                </p>
+                
             </div> : null}
 
         </div>

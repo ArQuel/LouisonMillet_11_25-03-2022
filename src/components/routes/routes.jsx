@@ -12,9 +12,11 @@ function Chemin() {
     return(
           <Routes>
             <Route path="/" element={<Accueil />}/>
-            <Route path="/description/:idlogement" element={<Description />}/>
-            <Route path="*" element={<Error404 />} />
+            <Route path="/description/">
+              <Route path=":idlogement" element={<Description />}/>
+            </Route>
             <Route path="/about" element={<About />} />
+            <Route path="*" element={<Error404 />} />
           </Routes>
       );
 }
